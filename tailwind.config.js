@@ -6,7 +6,8 @@ module.exports = {
 	content: ["./src/**/*.{html,njk,md}"],
 	theme: {
 		fontFamily: {
-			body: ["", "sans-serif"],
+			yellowtail: ["yellowtail", "sans-serif"],
+			rubik: ["rubik", "sans-serif"]
 		},
 
 		container: {
@@ -15,6 +16,22 @@ module.exports = {
 		},
 
 		extend: {
+			colors: {
+				pink: "#f70766",
+				"pink-medium": "#df0664",
+				"pink-dark": "#c50662",
+				lime: "#74F000",
+				"green": "#15C000",
+				"green-dark": "#11A500",
+				"off-white": "#FAFAFA",
+				gray: "#EFEFEF",
+				black: "#282828",
+			},
+
+			screens: {
+				'2xl': "1608px",
+			},
+
 			spacing: {
 				13: "3.25rem",
 				15: "3.75rem",
