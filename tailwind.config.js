@@ -29,10 +29,11 @@ module.exports = {
 			},
 
 			screens: {
-				'2xl': "1608px",
+				'2xl': "1672px",
 			},
 
 			spacing: {
+				"4.5": "1.125",
 				13: "3.25rem",
 				15: "3.75rem",
 				17: "4.25rem",

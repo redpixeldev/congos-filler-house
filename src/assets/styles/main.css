@@ -16,19 +16,19 @@
 
 @layer components {
 	.btn {
-	 	@apply font-bold text-h-5 text-white py-5 px-11 rounded-full transition-all duration-300 hover:-translate-x-[15px] hover:-translate-y-[15px] hover:effect-3d-button inline-block;
+	 	@apply font-bold text-h-5 py-5 px-11 rounded-full transition-all duration-300 hover:-translate-x-[15px] hover:-translate-y-[15px] hover:effect-3d-button inline-block;
 	}
 	.btn-primary {
-		@apply bg-pink;
+		@apply bg-pink text-white;
 	}
 	.btn-secondary {
-		@apply bg-lime;
+		@apply bg-lime text-black;
 	}
 }
 
 @layer utilities {
 	.text-h-1 {
-		@apply font-bold text-[80px]/[95px];
+		@apply text-[80px]/[95px];
 	}
 
 	.text-h-2 {
@@ -51,8 +51,7 @@
 		@apply relative rounded-[15px] overflow-hidden;
 		box-shadow: 2.5px 2.5px #c50662,
 		5px 5px #c50662,
-		10px 10px #c50662,
-		15px 15px #c50662
+		10px 10px #c50662
 	}
 
 	@screen md {
