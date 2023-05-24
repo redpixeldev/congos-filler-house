@@ -4,10 +4,18 @@ permalink: /
 layout: "layouts/base.html"
 ---
 
-<div
-	class="relative flex min-h-screen w-full items-end overflow-hidden bg-cover bg-center bg-no-repeat"
-	style="background-image: url(/assets/img/bg-home-hero.png)"
->
+<div class="relative flex min-h-screen w-full items-end overflow-hidden">
+	<video
+		autoplay
+		muted
+		loop
+		class="absolute inset-0 z-0 h-screen w-screen object-cover"
+	>
+		<source
+			src="/assets/img/bg-hero-video.mp4"
+			type="video/mp4"
+		/>
+	</video>
 	<div class="absolute inset-x-0 bottom-0 z-10 block h-2/5 bg-gradient-to-t from-pink-dark md:hidden"></div>
 	<div class="absolute -bottom-3 right-0 z-20 md:-bottom-6">
 		<img
@@ -120,20 +128,48 @@ layout: "layouts/base.html"
 
 <div class="relative">
 	<div class="relative overflow-hidden bg-off-white">
-		<div class="absolute -left-8 bottom-auto top-24 xl:bottom-56 xl:left-48 xl:top-auto">
+		<div class="absolute -left-8 bottom-auto top-24 z-20 xl:bottom-56 xl:left-48 xl:top-auto">
 			<img
 				src="/assets/img/kiss-pink-dark.png"
 				class="h-20 rotate-[-25deg] transform md:h-28 xl:h-[10.5rem] xl:rotate-0"
 				alt="pink kiss image"
 			/>
 		</div>
-		<div class="absolute -right-5 top-10 xl:top-36">
+		<div class="absolute -right-5 top-10 z-20 xl:top-36">
 			<img
 				src="/assets/img/kiss-pink-dark.png"
 				class="h-24 rotate-[-5deg] transform md:h-32 md:rotate-0 xl:h-[10.5rem] xl:rotate-[-25deg]"
 				alt="pink kiss image"
 			/>
 		</div>
+
+		<div
+			class="absolute left-0 top-40 h-44 w-20 rounded-r-[40px] bg-white opacity-60 shadow-[0px_3px_25px_#EFEFEF34]"
+		></div>
+
+		<div
+			class="absolute left-28 top-52 h-32 w-84 rounded-[40px] bg-white opacity-60 shadow-[0px_3px_25px_#EFEFEF34]"
+		></div>
+
+		<div
+			class="absolute right-0 top-52 h-32 w-96 rounded-l-[40px] bg-white opacity-60 shadow-[0px_3px_25px_#EFEFEF34]"
+		></div>
+
+		<div
+			class="absolute left-0 top-104 h-32 w-40 rounded-r-[40px] bg-white opacity-60 shadow-[0px_3px_25px_#EFEFEF34]"
+		></div>
+		<div
+			class="absolute left-48 top-108 h-32 w-64 rounded-[40px] bg-white opacity-60 shadow-[0px_3px_25px_#EFEFEF34]"
+		></div>
+
+		<div
+			class="absolute right-0 top-92 h-32 w-32 rounded-l-[40px] bg-white opacity-60 shadow-[0px_3px_25px_#EFEFEF34]"
+		></div>
+
+		<div
+			class="absolute right-48 top-92 h-44 w-48 rounded-[40px] bg-white opacity-60 shadow-[0px_3px_25px_#EFEFEF34]"
+		></div>
+
 		<div class="container relative z-30 pb-28 pt-20 md:pb-40 lg:pb-56 xl:pb-[265px] xl:pt-[88px]">
 			<span class="mx-auto block w-3/4">
 				<h1 class="text-h-4 md:text-h-3 lg:text-h-2 text-center font-bold text-black">Dit is FillerHouse</h1>
@@ -142,7 +178,7 @@ layout: "layouts/base.html"
 				<div
 					class="mx-auto flex flex-col items-end justify-center gap-2.5 md:flex-row md:gap-4 lg:gap-8 xl:w-2/3 2xl:w-1/2"
 				>
-					<div class="w-full md:w-1/2 xl:-ml-48 xl:w-[48%]">
+					<div class="w-full md:w-1/2 xl:-ml-32 xl:w-[48%]">
 						<div
 							class="rounded-[40px] bg-white px-6 py-5 shadow-[5px_5px_25px_rgba(240,186,212,0.18)] md:px-7 md:py-7 xl:px-9 xl:py-[2.375rem]"
 						>
