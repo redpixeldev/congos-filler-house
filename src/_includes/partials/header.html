@@ -12,13 +12,45 @@
 				/>
 			</a>
 			<div class="hidden lg:block">
-				<button class="btn btn-primary">Menu</button>
+				<button
+					class="btn btn-primary"
+					:class="{ '!effect-3d-button !-translate-x-[15px] !-translate-y-[15px]': $store.desktopMenu.isOpen }"
+					@click="$store.desktopMenu.toggle()"
+				>
+					Menu
+				</button>
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="fixed inset-0 z-50 hidden h-screen w-full bg-pink-medium">
+<div class="fixed -bottom-6 right-0 z-40 block pr-4 md:bottom-3.5 lg:hidden">
+	<img
+		src="/assets/img/icon-menu-bar.png"
+		class="h-14 xl:h-[70px]"
+		alt="arrow down"
+	/>
+</div>
+
+<div></div>
+
+<div
+	class="fixed inset-0 z-50 hidden h-screen w-full translate-x-full bg-pink-medium transition-transform duration-500 ease-in-out lg:block"
+	:class="{
+		'!translate-x-0': $store.desktopMenu.isOpen,
+	}"
+>
+	<video
+		autoplay
+		muted
+		loop
+		class="absolute inset-y-0 right-0 h-screen w-1/2 object-cover"
+	>
+		<source
+			src="/assets/img/gif_model_01.mp4"
+			type="video/mp4"
+		/>
+	</video>
 	<div class="container mt-76">
 		<div class="w-1/2">
 			<p class="text-2xl font-bold text-white">Jouw beautygeheim heet <span class="text-lime">FillerHouse</span></p>
@@ -26,7 +58,7 @@
 		</div>
 
 		<div class="mt-14 flex gap-24">
-			<ul>
+			<ul class="space-y-6">
 				<li>
 					<a
 						href="/"
@@ -35,7 +67,119 @@
 						Home
 					</a>
 				</li>
+				<li>
+					<a
+						href="/"
+						class="text-[37px]/[44px] font-bold text-white"
+					>
+						Over ons
+					</a>
+				</li>
+				<li>
+					<a
+						href="/"
+						class="text-[37px]/[44px] font-bold text-white"
+					>
+						Behandelingen
+					</a>
+				</li>
+				<li>
+					<a
+						href="/"
+						class="text-[37px]/[44px] font-bold text-white"
+					>
+						Prijslijst
+					</a>
+				</li>
+				<li>
+					<a
+						href="/"
+						class="text-[37px]/[44px] font-bold text-white"
+					>
+						Nieuws
+					</a>
+				</li>
+				<li>
+					<a
+						href="/"
+						class="text-[37px]/[44px] font-bold text-white"
+					>
+						Contact
+					</a>
+				</li>
+			</ul>
+			<ul class="space-y-4">
+				<li>
+					<a
+						href="/"
+						class="text-xl text-white"
+					>
+						Botox
+					</a>
+				</li>
+				<li>
+					<a
+						href="/"
+						class="text-xl text-white"
+					>
+						Fillers
+					</a>
+				</li>
+				<li>
+					<a
+						href="/"
+						class="text-xl text-white"
+					>
+						PDO Draadlift
+					</a>
+				</li>
+				<li>
+					<a
+						href="/"
+						class="text-xl text-white"
+					>
+						Lipo injecties
+					</a>
+				</li>
+				<li>
+					<a
+						href="/"
+						class="text-xl text-white"
+					>
+						PMU
+					</a>
+				</li>
+				<li>
+					<a
+						href="/"
+						class="text-xl text-white"
+					>
+						Peelings
+					</a>
+				</li>
+				<li>
+					<a
+						href="/"
+						class="text-xl text-white"
+					>
+						Brows
+					</a>
+				</li>
+				<li>
+					<a
+						href="/"
+						class="text-xl text-white"
+					>
+						Wimpers
+					</a>
+				</li>
 			</ul>
 		</div>
+
+		<a
+			href="/"
+			class="btn btn-primary mt-32 text-lg font-bold"
+			>Plan jouw afspraak online</a
+		>
 	</div>
 </div>
