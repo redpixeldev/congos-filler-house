@@ -1,4 +1,5 @@
 import Alpine from "alpinejs";
+import Swiper from "swiper/bundle";
 
 Alpine.store("desktopMenu", {
 	isOpen: false,
@@ -21,6 +22,28 @@ Alpine.store("mobileMenu", {
 
 	close() {
 		this.isOpen = false;
+	},
+});
+
+const swiper = new Swiper(".swiper", {
+	loop: true,
+
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+		renderBullet: function (index, className) {
+			return `<span class="${className}">
+				<span class="inline-block bullet-active">
+					<img
+						src="/assets/img/kiss-dot.png"
+						class="h-8"
+						alt=""
+					/>
+				</span>
+				<span class="bullet-inside"></span>
+			</span>
+		`;
+		},
 	},
 });
 

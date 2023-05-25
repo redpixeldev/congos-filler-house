@@ -3,7 +3,7 @@ module.exports = {
 	future: {
 		hoverOnlywhenSupported: true,
 	},
-	content: ["./src/**/*.{html,njk,md}"],
+	content: ["./src/**/*.{html,njk,md,js}"],
 	theme: {
 		fontFamily: {
 			yellowtail: ["yellowtail", "sans-serif"],
