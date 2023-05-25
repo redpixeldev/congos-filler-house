@@ -1,4 +1,4 @@
-@import 'fonts.css';
+@import "fonts.css";
 
 @tailwind base;
 @tailwind components;
@@ -16,7 +16,7 @@
 
 @layer components {
 	.btn {
-	 	@apply font-bold text-h-5 py-5 px-11 rounded-full transition-all duration-300 hover:-translate-x-[15px] hover:-translate-y-[15px] hover:effect-3d-button inline-block;
+		@apply text-h-5 hover:effect-3d-button inline-block rounded-full px-11 py-5 font-bold transition-all duration-300 hover:-translate-x-[15px] hover:-translate-y-[15px];
 	}
 	.btn-primary {
 		@apply bg-pink text-white;
@@ -47,42 +47,31 @@
 		@apply text-lg/[32px];
 	}
 
+	.effect-top-curve {
+		clip-path: ellipse(150% 90% at 50% 90%);
+	}
+
 	.effect-3d-image {
-		@apply relative rounded-[15px] overflow-hidden;
-		box-shadow: 2.5px 2.5px #c50662,
-		5px 5px #c50662,
-		10px 10px #c50662
+		@apply relative overflow-hidden rounded-[15px];
+		box-shadow: 2.5px 2.5px #c50662, 5px 5px #c50662, 10px 10px #c50662;
 	}
 
 	@screen md {
 		.effect-3d-image {
-			box-shadow: 2.5px 2.5px #c50662,
-			5px 5px #c50662,
-			10px 10px #c50662,
-			15px 15px #c50662,
-			20px 20px #c50662,
-			25px 25px #c50662
+			box-shadow: 2.5px 2.5px #c50662, 5px 5px #c50662, 10px 10px #c50662, 15px 15px #c50662, 20px 20px #c50662,
+				25px 25px #c50662;
 		}
 	}
 
 	@screen xl {
 		.effect-3d-image {
-			box-shadow: 2.5px 2.5px #c50662,
-			5px 5px #c50662,
-			10px 10px #c50662,
-			15px 15px #c50662,
-			20px 20px #c50662,
-			25px 25px #c50662,
-			30px 30px #c50662,
-			35px 35px #c50662
+			box-shadow: 2.5px 2.5px #c50662, 5px 5px #c50662, 10px 10px #c50662, 15px 15px #c50662, 20px 20px #c50662,
+				25px 25px #c50662, 30px 30px #c50662, 35px 35px #c50662;
 		}
 	}
 
 	.effect-3d-button {
-		@apply relative rounded-[50px] overflow-hidden;
-		box-shadow: 2.5px 2.5px #c50662,
-		5px 5px #c50662,
-		10px 10px #c50662,
-		15px 15px #c50662
+		@apply relative overflow-hidden rounded-[50px];
+		box-shadow: 2.5px 2.5px #c50662, 5px 5px #c50662, 10px 10px #c50662, 15px 15px #c50662;
 	}
 }
