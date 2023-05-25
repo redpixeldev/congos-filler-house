@@ -27,9 +27,11 @@
 
 	<body
 		x-data
-		:class="{'overflow-hidden': $store.mobileMenu.isOpen }"
+		:class="{
+			'overflow-hidden': $store.desktopMenu.isOpen || $store.mobileMenu.isOpen
+		}"
 	>
-		<main>
+		<main class="overflow-hidden">
 			<!-- prettier-ignore -->
 			{% include "partials/header.html" %}
 			{% block content %}
