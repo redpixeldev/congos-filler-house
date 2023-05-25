@@ -1,0 +1,81 @@
+---
+title: Post
+permalink: /post/
+layout: "layouts/base.html"
+---
+
+<div
+	class="relative min-h-[394px] w-full overflow-hidden bg-cover bg-top bg-no-repeat sm:min-h-[440px] md:min-h-[490px] lg:min-h-[550px] xl:min-h-[738px]"
+	style="background-image: url(/assets/img/news-1.jpg)"
+>
+	<div class="absolute -bottom-3 left-auto right-0 z-20 w-[125%] sm:w-auto md:-bottom-6 md:left-0 md:right-auto">
+		<img
+			src="/assets/img/section-shape-white.svg"
+			class="transform -scale-x-100"
+			alt="shape image"
+		/>
+	</div>
+</div>
+<div class="container pb-[111px]  md:pb-20 pt-6 xl:pt-12">
+	<div class="xl:px-20 2xl:px-40">
+		<div class="pb-24">
+			<span class="flex flex-col-reverse sm:flex-row justify-center items-baseline">
+				<span>
+					<h3 class="text-h-4 md:text-h-3 xl:text-h-2 font-bold text-black">
+						Onze behandelingen
+					</h3>
+				</span>
+				<span class="block pb-1 sm:pb-4 mx-auto sm:mx-0">
+					<img
+						src="/assets/img/icon-green-stars.png"
+						class="h-[60px]"
+						alt="icon stars"
+					/>
+				</span>
+			</span>
+			<div class="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-8 pt-[18px] md:pt-7">
+				<span class="text-h-5 text-[#868686] italic">01 Januari 2023</span>
+				<span class="text-h-5 text-[#868686] italic">Geschreven door Claudia Jacobs.</span>
+			</div>
+			<div class="prose max-w-[790px] mx-auto pt-12 md:pt-7 prose-p:text-lg/[32px] prose-strong:text-pink prose-strong:font-bold prose-strong:italic prose:text-black prose-h1:text-h-3 md:prose-h1:text-h-2 2xl:prose-h1:text-h-1 prose-h2:text-h-4 md:prose-h2:text-h-3 xl:prose-h2:text-h-2 prose-h3:text-h-4  2xl:prose-h3:text-h-3 prose-h4:text-2xl xl:prose-h4:text-h-4">
+				<p>Lorem ipsum <strong>dolor sit amet, consetetur sadipscing elitr, sed diam</strong> nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt <strong>ut labore</strong> et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam </p>
+				<p>	voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <strong>sed diam nonumy eirmod tempor invidunt</strong> ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et <strong>accusam</strong> et justo duo <strong>dolores et ea rebum</strong>. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem</p>
+			</div>
+		</div>
+		<div>
+			<h3 class="text-h-4 font-bold text-center">Bekijk ook</h3>
+			<div class="flex w-full gap-2 overflow-auto whitespace-nowrap pr-4 xl:pr-0 pt-5 xl:grid xl:grid-cols-3 xl:gap-4">
+				{% for item in range(0,3) %}
+				<div class="flex w-[90%] sm:w-5/6 md:w-[45%] lg:w-2/5 xl:w-full shrink-0 flex-col whitespace-normal bg-white rounded-[25px] px-[18px] md:px-5 pt-[18px] pb-[18px] md:pb-5">
+					<span>
+						<img src="/assets/img/services-{{ loop.index }}.jpg" class="rounded-[25px] h-[201px] md:h-[287px] w-full object-cover" alt="botox image">
+					</span>
+					<div class="pt-4 md:pt-6">
+						<h3 class="pb-4 text-xl/[26px] font-bold xl:text-2xl/[32px]">Nieuwsbericht #1</h3>
+						<p class="text-h-5 lg:line-clamp-3 lg:min-h-[96px]">
+							Een kleine ingreep met voor een mooie, frisse uitstraling. Vele enthousiaste klanten gingen je voor met
+							onze FillerHouse lip fillers.
+						</p>
+						<div class="mt-5">
+							<a
+								href="/"
+								class="btn btn-primary !bg-[#e5055b] md:!px-10"
+								>Lees verder</a
+							>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+			<div class="mt-12 flex justify-center">
+				<a
+					href="/"
+					class="btn btn-primary md:!px-10"
+					>Terug naar nieuwsoverzicht</a
+				>
+			</div>
+		</div>
+	</div>
+</div>
