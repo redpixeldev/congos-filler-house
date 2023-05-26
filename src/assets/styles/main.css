@@ -85,6 +85,11 @@
 		clip-path: ellipse(150% 90% at 50% 90%);
 	}
 
+	.effect-3d-image-small {
+		@apply relative overflow-hidden rounded-[15px];
+		box-shadow: 2.5px 2.5px #c50662, 5px 5px #c50662, 10px 10px #c50662, 15px 15px #c50662;
+	}
+
 	.effect-3d-image {
 		@apply relative overflow-hidden rounded-[15px];
 		box-shadow: 2.5px 2.5px #c50662, 5px 5px #c50662, 10px 10px #c50662;
@@ -94,6 +99,13 @@
 		.effect-3d-image {
 			box-shadow: 2.5px 2.5px #c50662, 5px 5px #c50662, 10px 10px #c50662, 15px 15px #c50662, 20px 20px #c50662,
 				25px 25px #c50662;
+		}
+	}
+
+	@screen lg {
+		.effect-3d-image-small {
+			@apply relative overflow-hidden rounded-[15px];
+			box-shadow: 2.5px 2.5px #c50662, 5px 5px #c50662, 10px 10px #c50662, 15px 15px #c50662, 20px 20px #c50662;
 		}
 	}
 
