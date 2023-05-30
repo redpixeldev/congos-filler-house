@@ -1,5 +1,8 @@
 import Alpine from "alpinejs";
 import Swiper from "swiper/bundle";
+import collapse from "@alpinejs/collapse";
+
+Alpine.plugin(collapse);
 
 Alpine.store("desktopMenu", {
 	isOpen: false,
