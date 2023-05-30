@@ -50,7 +50,7 @@
 
 @layer components {
 	.btn {
-		@apply text-h-5 hover:effect-3d-button inline-block rounded-full px-11 py-5 font-bold transition-all duration-300 hover:-translate-x-[15px] hover:-translate-y-[15px];
+		@apply text-h-5 effect-3d-button-transparent hover:effect-3d-button inline-block rounded-full px-11 py-5 font-bold transition-all duration-300 hover:-translate-x-[15px] hover:-translate-y-[15px];
 	}
 	.btn-primary {
 		@apply bg-pink text-white;
@@ -119,5 +119,10 @@
 	.effect-3d-button {
 		@apply relative overflow-hidden rounded-[50px];
 		box-shadow: 2.5px 2.5px #c50662, 5px 5px #c50662, 10px 10px #c50662, 15px 15px #c50662;
+	}
+
+	.effect-3d-button-transparent {
+		@apply relative overflow-hidden rounded-[50px];
+		box-shadow: 2.5px 2.5px transparent, 5px 5px transparent, 10px 10px transparent, 15px 15px transparent;
 	}
 }
