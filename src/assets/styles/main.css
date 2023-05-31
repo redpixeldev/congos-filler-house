@@ -50,12 +50,28 @@
 
 @layer components {
 	.btn {
-		@apply text-h-5 effect-3d-button-transparent hover:effect-3d-button inline-block rounded-full px-11 py-5 font-bold transition-all duration-300 hover:-translate-x-[15px] hover:-translate-y-[15px];
+		@apply relative inline-block after:absolute after:inset-0 after:h-full after:w-full after:rounded-[50px] after:bg-[#c50662];
+
+		.btn-content {
+			@apply text-h-5 relative z-10 block rounded-[50px] px-11 py-5 font-bold transition-all duration-300;
+
+			&.active {
+				@apply -translate-x-[15px] -translate-y-[15px];
+			}
+		}
+
+		&:hover {
+			.btn-content {
+				@apply -translate-x-[15px] -translate-y-[15px];
+			}
+		}
 	}
-	.btn-primary {
+
+	.btn-primary .btn-content {
 		@apply bg-pink text-white;
 	}
-	.btn-secondary {
+
+	.btn-secondary .btn-content {
 		@apply bg-lime text-black;
 	}
 }
