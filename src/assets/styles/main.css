@@ -50,7 +50,7 @@
 
 @layer components {
 	.btn {
-		@apply relative inline-block after:absolute after:inset-0 after:h-full after:w-full after:rounded-[50px] after:bg-[#c50662];
+		@apply relative inline-block rounded-[50px] after:absolute after:inset-0 after:h-full after:w-full after:rounded-[50px] after:bg-[#c50662];
 
 		.btn-content {
 			@apply text-h-5 relative z-10 block rounded-[50px] px-11 py-5 font-bold transition-all duration-300;
@@ -139,6 +139,10 @@
 	.effect-3d-button {
 		@apply relative overflow-hidden rounded-[50px];
 		box-shadow: 2.5px 2.5px #c50662, 5px 5px #c50662, 10px 10px #c50662, 15px 15px #c50662;
+	}
+	.effect-3d-button-green {
+		@apply relative overflow-hidden rounded-[50px];
+		box-shadow: 2.5px 2.5px #11A500, 5px 5px #11A500, 10px 10px #11A500, 15px 15px #11A500;
 	}
 
 	.effect-3d-button-transparent {

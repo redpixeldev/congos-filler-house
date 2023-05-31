@@ -37,9 +37,9 @@ layout: "layouts/base.html"
 			</div>
 			<div class="pt-7 md:pt-12 lg:pt-16 xl:pt-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7 md:gap-4">
 				{% for item in range(0,12) %}
-				<div class="bg-white rounded-[25px] px-[18px] md:px-5 pt-[18px] pb-[18px] md:pb-5">
+				<div class="bg-white rounded-[15px] md:rounded-[25px] px-[18px] md:px-5 pt-[18px] pb-[18px] md:pb-5">
 					<span>
-						<img src="/assets/img/services-{{ loop.index }}.jpg" class="rounded-[25px] h-[225px] md:h-[287px] w-full object-cover" alt="botox image">
+						<img src="/assets/img/services-{{ loop.index }}.jpg" class="rounded-[5px] md:rounded-[10px] h-[225px] md:h-[287px] w-full object-cover" alt="botox image">
 					</span>
 					<div class="pt-4 md:pt-6">
 						<h3 class="pb-4 text-xl/[26px] font-bold xl:text-2xl/[32px]">Nieuwsbericht #1</h3>
@@ -50,8 +50,12 @@ layout: "layouts/base.html"
 						<div class="mt-5">
 							<a
 								href="/"
-								class="btn btn-primary !bg-[#e5055b] md:!px-10"
-								>Lees verder</a
+								class="btn btn-primary !bg-[#e5055b]"
+								>
+								<span class="btn-content md:!px-10">
+									Lees verder
+								</span>
+								</a
 							>
 						</div>
 					</div>
@@ -60,25 +64,25 @@ layout: "layouts/base.html"
 
 			</div>
 			<div class="flex items-center justify-between gap-5 pt-7">
-				<span class="block h-[70px]">
+				<a href="/" class="block h-[70px]">
 					<img
 						src="/assets/img/icon-arrow-left.png"
 						class="h-[70px]"
 						alt="arrow left"
 					/>
-				</span>
+				</a>
 				<span class="hidden items-center gap-12 lg:flex">
-					<span class="text-h-5 block font-bold text-black">1</span>
-					<span class="text-h-5 block font-bold text-black">2</span>
-					<span class="text-h-5 block font-bold text-black">3</span>
+					<a href="/" class="text-h-5 block font-bold text-black">1</a>
+					<a href="/" class="text-h-5 block font-bold text-black">2</a>
+					<a href="/" class="text-h-5 block font-bold text-black">3</a>
 				</span>
-				<span class="block h-[70px]">
+				<a href="/" class="block h-[70px]">
 					<img
 						src="/assets/img/icon-arrow-left.png"
 						class="h-[70px] rotate-180 transform"
 						alt="arrow right"
 					/>
-				</span>
+				</a>
 			</div>
 		</div>
 	</div>
