@@ -50,7 +50,7 @@
 
 @layer components {
 	.btn {
-		@apply relative inline-block rounded-[50px] after:absolute after:inset-0 after:h-full after:w-full after:rounded-[50px] after:bg-[#c50662];
+		@apply relative inline-block rounded-[50px] after:absolute after:inset-0 after:h-full after:w-full after:rounded-[50px] ;
 
 		.btn-content {
 			@apply text-h-5 relative z-10 block rounded-[50px] px-11 py-5 font-bold transition-all duration-300;
@@ -67,12 +67,19 @@
 		}
 	}
 
-	.btn-primary .btn-content {
-		@apply bg-pink text-white;
+	.btn-primary {
+		@apply after:bg-[#c50662];
+		.btn-content {
+			@apply bg-pink text-white;
+		}
 	}
 
-	.btn-secondary .btn-content {
-		@apply bg-lime text-black;
+	.btn-secondary {
+		@apply after:bg-green-dark;
+
+		.btn-content {
+			@apply bg-lime text-black;
+		}
 	}
 }
 
