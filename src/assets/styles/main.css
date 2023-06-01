@@ -122,10 +122,23 @@
 		box-shadow: 2.5px 2.5px #c50662, 5px 5px #c50662, 10px 10px #c50662;
 	}
 
+	.green-kiss {
+		@apply absolute bottom-[26rem] left-44 top-auto;
+	}
+
+	@screen sm  {
+		.green-kiss {
+			@apply bottom-auto left-76 top-[37rem];
+		}
+	}
+
 	@screen md {
 		.effect-3d-image {
 			box-shadow: 2.5px 2.5px #c50662, 5px 5px #c50662, 10px 10px #c50662, 15px 15px #c50662, 20px 20px #c50662,
 				25px 25px #c50662;
+		}
+		.green-kiss {
+			@apply left-84 top-[34rem];
 		}
 	}
 
@@ -134,6 +147,9 @@
 			@apply relative overflow-hidden rounded-[15px];
 			box-shadow: 2.5px 2.5px #c50662, 5px 5px #c50662, 10px 10px #c50662, 15px 15px #c50662, 20px 20px #c50662;
 		}
+		.green-kiss {
+			@apply left-0 top-[32rem];
+		}
 	}
 
 	@screen xl {
@@ -141,7 +157,22 @@
 			box-shadow: 2.5px 2.5px #c50662, 5px 5px #c50662, 10px 10px #c50662, 15px 15px #c50662, 20px 20px #c50662,
 				25px 25px #c50662, 30px 30px #c50662, 35px 35px #c50662;
 		}
+		.green-kiss {
+			@apply top-40 z-20;
+		}
 	}
+
+	@screen 2xl {
+		.green-kiss {
+			@apply left-16 top-52;
+		}
+	}
+
+	@media (min-width: 1672px) and  (max-width: 1850px) {
+		.green-kiss {
+			@apply left-4 top-24 z-10;
+		}
+  }
 
 	.effect-3d-button {
 		@apply relative overflow-hidden rounded-[50px];
@@ -156,4 +187,7 @@
 		@apply relative overflow-hidden rounded-[50px];
 		box-shadow: 2.5px 2.5px transparent, 5px 5px transparent, 10px 10px transparent, 15px 15px transparent;
 	}
+
+
+
 }
