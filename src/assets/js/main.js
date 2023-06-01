@@ -38,7 +38,7 @@ const swiper = new Swiper(".swiper", {
 			return `<span class="${className}">
 				<span class="inline-block bullet-active">
 					<img
-						src="/assets/img/kiss-dot.png"
+						src="/assets/img/icon-kiss.png"
 						class="h-8"
 						alt=""
 					/>
