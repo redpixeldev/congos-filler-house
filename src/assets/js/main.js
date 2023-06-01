@@ -1,6 +1,7 @@
 import Alpine from "alpinejs";
 import Swiper from "swiper/bundle";
 import collapse from "@alpinejs/collapse";
+import kissImage from "../img/icon-kiss.png";
 
 Alpine.plugin(collapse);
 
@@ -38,7 +39,7 @@ const swiper = new Swiper(".swiper", {
 			return `<span class="${className}">
 				<span class="inline-block bullet-active">
 					<img
-						src="/assets/img/icon-kiss.png"
+						src="${kissImage}"
 						class="h-8"
 						alt=""
 					/>
