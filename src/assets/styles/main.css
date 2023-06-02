@@ -50,7 +50,7 @@
 
 @layer components {
 	.btn {
-		@apply relative inline-block rounded-[50px] after:absolute after:inset-0 after:h-full after:w-full after:rounded-[50px] ;
+		@apply relative inline-block rounded-[50px] after:absolute after:inset-0 after:h-full after:w-full after:rounded-[50px];
 
 		.btn-content {
 			@apply text-h-5 relative z-10 block rounded-[50px] px-11 py-5 font-bold transition-all duration-300;
@@ -126,7 +126,7 @@
 		@apply absolute bottom-[26rem] left-44 top-auto;
 	}
 
-	@screen sm  {
+	@screen sm {
 		.green-kiss {
 			@apply bottom-auto left-76 top-[37rem];
 		}
@@ -168,11 +168,11 @@
 		}
 	}
 
-	@media (min-width: 1672px) and  (max-width: 1850px) {
+	@media (min-width: 1672px) and (max-width: 1850px) {
 		.green-kiss {
 			@apply left-4 top-24 z-10;
 		}
-  }
+	}
 
 	.effect-3d-button {
 		@apply relative overflow-hidden rounded-[50px];
@@ -180,14 +180,11 @@
 	}
 	.effect-3d-button-green {
 		@apply relative overflow-hidden rounded-[50px];
-		box-shadow: 2.5px 2.5px #11A500, 5px 5px #11A500, 10px 10px #11A500, 15px 15px #11A500;
+		box-shadow: 2.5px 2.5px #11a500, 5px 5px #11a500, 10px 10px #11a500, 15px 15px #11a500;
 	}
 
 	.effect-3d-button-transparent {
 		@apply relative overflow-hidden rounded-[50px];
 		box-shadow: 2.5px 2.5px transparent, 5px 5px transparent, 10px 10px transparent, 15px 15px transparent;
 	}
-
-
-
 }

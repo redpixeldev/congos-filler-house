@@ -40,7 +40,7 @@ const swiper = new Swiper(".swiper", {
 				<span class="inline-block bullet-active">
 					<img
 						src="${kissImage}"
-						class="h-8"
+						class="h-8 w-[2.1rem]"
 						alt=""
 					/>
 				</span>

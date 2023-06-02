@@ -7,7 +7,7 @@ module.exports = {
 	theme: {
 		fontFamily: {
 			yellowtail: ["yellowtail", "sans-serif"],
-			rubik: ["rubik", "sans-serif"]
+			rubik: ["rubik", "sans-serif"],
 		},
 
 		container: {
@@ -21,7 +21,7 @@ module.exports = {
 				"pink-medium": "#df0664",
 				"pink-dark": "#c50662",
 				lime: "#74F000",
-				"green": "#15C000",
+				green: "#15C000",
 				"green-dark": "#11A500",
 				"off-white": "#FAFAFA",
 				gray: "#EFEFEF",
@@ -29,11 +29,11 @@ module.exports = {
 			},
 
 			screens: {
-				'2xl': "1672px",
+				"2xl": "1672px",
 			},
 
 			spacing: {
-				"4.5": "1.125",
+				4.5: "1.125",
 				13: "3.25rem",
 				15: "3.75rem",
 				17: "4.25rem",
