@@ -1,9 +1,11 @@
 import Alpine from "alpinejs";
 import Swiper from "swiper/bundle";
 import collapse from "@alpinejs/collapse";
+import intersect from "@alpinejs/intersect";
 import kissImage from "../img/icon-kiss.png";
 
 Alpine.plugin(collapse);
+Alpine.plugin(intersect);
 
 Alpine.store("desktopMenu", {
 	isOpen: false,
