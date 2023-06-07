@@ -55,9 +55,9 @@ layout: "layouts/base.html"
 	<div class="green-kiss">
 		<img
 			src="/assets/img/kiss-green.png"
-			class="h-[91px] rotate-[-15deg] transform transition-all duration-500 ease-in-out md:h-[110px] md:rotate-0 lg:h-[8.75rem]"
+			class="h-[91px] rotate-[-15deg] scale-0 transform opacity-0 transition-all duration-500 ease-in-out md:h-[110px] md:rotate-0 lg:h-[8.75rem]"
 			alt="green kiss image"
-			:class="{  'opacity-0 scale-0': shown }"
+			:class="{  'opacity-100 scale-100': shown }"
 		/>
 	</div>
 	<div class="container relative z-20 pb-10 pt-12 md:pb-16 md:pt-16 lg:z-10 lg:pb-24 lg:pt-24 xl:pb-32 xl:pt-36">
@@ -68,26 +68,26 @@ layout: "layouts/base.html"
 				<span class="w-full pt-2 lg:w-1/2 lg:pt-5">
 					<img
 						src="assets/img/services-5.jpg"
-						class="h-[170px] w-full translate-x-[35px] translate-y-[35px] rounded-[15px] object-cover transition-all duration-500 ease-in-out sm:h-[235px] md:h-[360px] md:rounded-[50px] 2xl:h-[472px]"
+						class="effect-3d-image h-[170px] w-full translate-x-0 translate-y-0 rounded-[15px] object-cover transition-all duration-500 ease-in-out sm:h-[235px] md:h-[360px] md:rounded-[50px] 2xl:h-[472px]"
 						alt="image"
-						:class="{ 'effect-3d-image translate-x-0 translate-y-0': shown || window.innerWidth < 1024 }"
+						:class="{ 'translate-x-[35px] translate-y-[35px] !shadow-none': shown || window.innerWidth < 1024 }"
 					/>
 				</span>
 				<div class="flex w-full flex-row items-end gap-4 md:gap-9 lg:w-1/2 lg:flex-col lg:gap-0">
 					<span class="block w-1/2 lg:w-full">
 						<img
 							src="/assets/img/services-6.jpg"
-							class="h-[262px] w-full translate-x-[35px] translate-y-[35px] rounded-[15px] object-cover transition-all duration-500 ease-in-out sm:h-[300px] md:rounded-[50px] lg:h-[163px] 2xl:h-[214px]"
+							class="h-[262px] w-full translate-x-0 translate-y-0 rounded-[15px] object-cover transition-all duration-500 ease-in-out sm:h-[300px] md:rounded-[50px] lg:h-[163px] 2xl:h-[214px]"
 							alt="image"
-							:class="{ 'effect-3d-image translate-x-0 translate-y-0': shown || window.innerWidth < 1024 }"
+							:class="{ 'translate-x-[35px] translate-y-[35px] !shadow-none': shown || window.innerWidth < 1024 }"
 						/>
 					</span>
 					<span class="block w-1/2 pt-6 lg:w-full">
 						<img
 							src="/assets/img/services-3.jpg"
-							class="h-[210px] w-full translate-x-[35px] translate-y-[35px] rounded-[15px] object-cover transition-all duration-500 ease-in-out sm:h-[239px] md:rounded-[50px] lg:h-[239px] 2xl:h-[314px]"
+							class="h-[210px] w-full translate-x-0 translate-y-0 rounded-[15px] object-cover transition-all duration-500 ease-in-out sm:h-[239px] md:rounded-[50px] lg:h-[239px] 2xl:h-[314px]"
 							alt="image"
-							:class="{ 'effect-3d-image translate-x-0 translate-y-0': shown || window.innerWidth < 1024 }"
+							:class="{ 'translate-x-[35px] translate-y-[35px] !shadow-none': shown || window.innerWidth < 1024 }"
 						/>
 					</span>
 				</div>
@@ -451,18 +451,18 @@ layout: "layouts/base.html"
 			<span class="w-1/2">
 				<img
 					src="assets/img/testimonial-01.jpg"
-					class="h-[235px] w-[95%] translate-x-[35px] translate-y-[35px] rounded-[15px] object-cover transition-all duration-500 ease-in-out sm:h-[450px] md:w-auto md:rounded-[50px] lg:h-[552px]"
+					class="effect-3d-image h-[235px] w-[95%] translate-x-0 translate-y-0 rounded-[15px] object-cover transition-all duration-500 ease-in-out sm:h-[450px] md:w-auto md:rounded-[50px] lg:h-[552px]"
 					alt="image"
-					:class="{ 'effect-3d-image translate-x-0 translate-y-0': shown || window.innerWidth < 1024 }"
+					:class="{ 'translate-x-[35px] translate-y-[35px] !shadow-none': shown || window.innerWidth < 1024 }"
 				/>
 			</span>
 			<span class="w-1/2">
 				<span class="block pt-[53px]">
 					<img
 						src="assets/img/testimonial-02.jpg"
-						class="h-[235px] w-[95%] translate-x-[35px] translate-y-[35px] rounded-[15px] object-cover transition-all duration-500 ease-in-out sm:h-[450px] md:w-auto md:rounded-[50px] lg:h-[552px]"
+						class="effect-3d-image h-[235px] w-[95%] translate-x-0 translate-y-0 rounded-[15px] object-cover transition-all duration-500 ease-in-out sm:h-[450px] md:w-auto md:rounded-[50px] lg:h-[552px]"
 						alt="image"
-						:class="{ 'effect-3d-image translate-x-0 translate-y-0': shown || window.innerWidth < 1024 }"
+						:class="{ 'translate-x-[35px] translate-y-[35px] !shadow-none': shown || window.innerWidth < 1024 }"
 					/>
 				</span>
 			</span>
